@@ -8,7 +8,7 @@ st.set_page_config(page_title = "Salary Satisfaction App", layout = "wide")
 st.title(" Salary Estimation App ")
 st.markdown("#### Predict your expected salary based on company experience!")
 
-st.image(r'C:\Users\tarun\Downloads\CapStone Project\2024-05-24_Doge_meme_death_-_Hero.jpg', caption = "Let's Predict", use_container_width=True)
+st.image('2024-05-24_Doge_meme_death_-_Hero.jpg', caption = "Let's Predict", use_container_width=True)
 
 st.divider()
 
@@ -38,7 +38,7 @@ if predict_button:
     X_array = scaler.transform([np.array(X)])
     prediction = model.predict(X_array)
     
-    st.success(f' Predicted Salary : ^^$(prediction[0]:,.2f)^^')
+    st.success(f"Predicted Salary: ${prediction[0]:,.2f}")
     
     df_layout = pd.DataFrame({
         "Feature" : ["Years at company", "Satisfaction Level", "Average Monthly Hours"],
