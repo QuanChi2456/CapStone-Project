@@ -45,7 +45,7 @@ if predict_button:
         "Value" : X
     })
     
-    fig = px.bar(df_input, x = "Feature", y = "Value", color = "Feature", title = " Your Input  Profile")
+    fig = px.bar(df_layout, x = "Feature", y = "Value", color = "Feature", title = " Your Input  Profile")
     st.plotly_chart(fig, use_container_width = True)
  
 else:
