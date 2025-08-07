@@ -8,7 +8,7 @@ st.set_page_config(page_title = "Salary Satisfaction App", layout = "wide")
 st.title(" Salary Estimation App ")
 st.markdown("#### Predict your expected salary based on company experience!")
 
-st.image('2024-05-24_Doge_meme_death_-_Hero.jpg', caption = "Let's Predict", use_container_width=300)
+st.image('2024-05-24_Doge_meme_death_-_Hero.jpg', caption = "Let's Predict", use_container_width=True)
 
 st.divider()
 
